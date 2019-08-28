@@ -1,0 +1,25 @@
+.landing-main {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #463939;
+}
+.landing-main > input#main-search-bar {
+    width: 50vw;
+    outline: none;
+    height: 2em;
+    text-align: center;
+}
+.landing-main > button#search-button {
+    margin-top: 5vh;
+    width: 12.5vw;
+    height: 2em;
+    outline: none;
+    cursor: pointer;
+}
+.landing-main > button#search-button:active {
+    transform: scale(.95);
+}

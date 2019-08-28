@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import axios from "axios";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'nodb';
+  searchQuery:string = null;
+
+  queryGames() {
+    console.log("here")
+    axios.get(`/api/search/${this.searchQuery}`).then(console.log)
+  }
 }
